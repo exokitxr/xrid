@@ -540,7 +540,6 @@ return module.exports;
 // xrid
 
 const {EventEmitter} = events;
-// const _makeId = () => Math.floor(Math.random() * 0xFFFFFFFF);
 const _elementGetter = (self, attribute) => self.listeners(attribute)[0];
 const _elementSetter = (self, attribute, cb) => {
   if (typeof cb === 'function') {
