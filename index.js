@@ -560,7 +560,7 @@ class XRIDEvent {
 module.exports.XRIDEvent = XRIDEvent;
 
 class XRID extends EventEmitter {
-  constructor({url, username, password, token} = {}) {
+  constructor(url, {username, password, token} = {}) {
     super();
 
     let user = null;
